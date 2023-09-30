@@ -15,6 +15,10 @@ export default {
       'dark-grey': '#333333',
     },
     extend: {
+      boxShadow: {
+        'menu': 'rgba(0, 0, 0, 0.25) 0px 0px 0px 5rem inset'
+      },
+
       letterSpacing: {
         widest: '0.2rem',
       },
