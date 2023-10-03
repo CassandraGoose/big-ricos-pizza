@@ -28,6 +28,7 @@ export default {
       },
       fontFamily: {
         oswald: ["Oswald", "sans-serif"],
+        dm: ["DM Serif Display", "serif"]
       }
     },
   },
