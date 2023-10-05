@@ -71,7 +71,7 @@ function Deals() {
               By-Products. There are no Wheat and Wheat By-Products on the
               premises of Big Rico's Pizza
             </p>
-            <Button text="Order Now" px={3} py={3} wrap="whitespace-nowrap" textColor="white" bgColor="red" />
+            <Button text='Order Now' xPadding='3' bgColor='red' />
           </div>
         </div>
       </div>

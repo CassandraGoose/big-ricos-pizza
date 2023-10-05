@@ -6,9 +6,9 @@ function StartOrder() {
       <div aria-hidden='true' className='w-20 h-[2px] bg-light-grey'></div>
       <p className='text-2xl text-blue font-medium'>Start your order</p>
       <div className='flex justify-center items-center'>
-        <Button text='Delivery' px={14} py={3} bgColor='red' textColor='white' wrap='uppercase' />
+        <Button text='Delivery' xPadding='14' bgColor='red' />
         <p className='font-dm lowercase text-xl mx-4 text-blue'>or</p>
-        <Button text='Carryout' px={14} py={3} bgColor='red' textColor='white' wrap='uppercase' />
+        <Button text='Carryout' xPadding='14' bgColor='red' />
       </div>
       <div aria-hidden='true' className='w-20 h-[2px] bg-light-grey'></div>
     </div>
