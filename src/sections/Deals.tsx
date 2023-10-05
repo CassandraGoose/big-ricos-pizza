@@ -9,9 +9,9 @@ function Deals() {
     <div className='h-big w-8/12 gap-3 grid grid-cols-10 grid-rows-6'>
       <BigDeal />
       <div className='row-start-1 row-end-3 col-start-7 col-end-11 border border-light-grey'>
-        <div className='grid grid-cols-2 items-center mt-1'>
+        <div className='grid grid-cols-3 items-center mt-1'>
           <div className='flex'>
-            <div className='bg-red text-white flex items-center px-4 py-1 text-2xl shadow-lg shadow-red/50'>
+            <div className='col-span-1 bg-red text-white flex items-center px-4 py-1 text-2xl shadow-lg shadow-red/50'>
               New
             </div>
             <div>
@@ -20,7 +20,7 @@ function Deals() {
             </div>
           </div>
 
-          <div className='text-blue flex flex-col justify-center items-center text-4xl font-medium'>
+          <div className='col-start-2 col-end-4 text-blue flex flex-col justify-center items-center text-4xl font-medium'>
             <span className='tracking-widest text-base'>Big Rico's</span>Rewards
           </div>
         </div>
