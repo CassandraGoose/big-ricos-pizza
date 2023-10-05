@@ -21,7 +21,7 @@ function Navigation() {
             <span className='block w-0 h-0 border-solid border-t-0 border-b-[1.33rem] border-l-[1.4rem] border-r-0 border-r-blue border-t-blue border-l-blue border-b-white'></span>
           </div>
           <span className='flex flex-col justify-center items-center bg-white text-blue h-1/2 text-xs px-2 py-1'>
-            <span className='flex justify-center items-center'>
+            <span className='flex justify-center items-center whitespace-nowrap'>
               Now, earn
               <div className='flex mx-1'>
                 <div className='flex flex-col justify-right'>

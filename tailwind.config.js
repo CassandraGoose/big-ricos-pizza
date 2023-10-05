@@ -17,7 +17,7 @@ export default {
     },
     extend: {
       height: {
-        'big': '48rem',
+        'big': '52rem',
       },
       backgroundImage: {
         'deals': "url('/src/assets/tomatoes.png')",
@@ -31,6 +31,7 @@ export default {
         widester: '0.5rem'
       },
       fontSize: {
+        'xxxs': '0.45rem',
         'xxs': '0.65rem',
         'xs': '.8rem',
       },
