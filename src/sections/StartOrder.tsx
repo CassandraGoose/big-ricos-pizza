@@ -2,7 +2,7 @@ import Button from '../components/Button';
 
 function StartOrder() {
   return (
-    <div className='flex items-center justify-between my-8 w-8/12'>
+    <section className='flex items-center justify-between my-8 w-8/12'>
       <div aria-hidden='true' className='w-20 h-[2px] bg-light-grey'></div>
       <p className='text-2xl text-blue font-medium'>Start your order</p>
       <div className='flex justify-center items-center'>
@@ -11,7 +11,7 @@ function StartOrder() {
         <Button text='Carryout' xPadding='14' bgColor='red' />
       </div>
       <div aria-hidden='true' className='w-20 h-[2px] bg-light-grey'></div>
-    </div>
+    </section>
   );
 }
 

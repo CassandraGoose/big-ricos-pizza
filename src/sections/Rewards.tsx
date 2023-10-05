@@ -4,7 +4,7 @@ import Cheese from '../assets/cheese.png';
 import Drinks from '../assets/drinks.png';
 
 function Rewards() {
-  return (<div className='row-start-1 row-end-3 col-start-7 col-end-11 border border-light-grey'>
+  return (<section className='row-start-1 row-end-3 col-start-7 col-end-11 border border-light-grey'>
   <div className='grid grid-cols-3 items-center mt-1'>
     <div className='flex'>
       <div className='col-span-1 bg-red text-white flex items-center px-4 py-1 text-2xl shadow-lg shadow-red/50'>
@@ -73,7 +73,7 @@ function Rewards() {
   <p className='text-xxs normal-case'>
     See Big Rico's <span>Terms & Conditions.</span>
   </p>
-</div>)
+</section>)
 }
 
 export default Rewards;

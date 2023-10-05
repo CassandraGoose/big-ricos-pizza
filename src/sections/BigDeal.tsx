@@ -2,7 +2,7 @@ import Button from '../components/Button';
 
 function BigDeal() {
   return (
-    <div className='row-start-1 row-end-5 col-span-6 bg-deals bg-fit bg-cover bg-right'>
+    <section className='row-start-1 row-end-5 col-span-6 bg-deals bg-fit bg-cover bg-right'>
       <div className='flex flex-col h-full justify-between p-4'>
         <div className='w-1/2 flex'>
           <span className='block w-0 h-0 border-solid border-t-[1.35rem] border-b-[1.35rem] border-r-[0.75rem] border-l-0 border-t-transparent border-b-transparent border-l-transparent border-r-white'></span>
@@ -73,7 +73,7 @@ function BigDeal() {
           <Button text='Order Now' xPadding='3' bgColor='red' />
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
