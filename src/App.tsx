@@ -1,6 +1,6 @@
-import Navigation from './Navigation';
-import StartOrder from './StartOrder';
-import Deals from './Deals';
+import Navigation from './sections/Navigation';
+import StartOrder from './sections/StartOrder';
+import Deals from './sections/Deals';
 
 function App() {
   return (

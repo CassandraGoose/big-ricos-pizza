@@ -1,5 +1,5 @@
-import Logo from './assets/logo.svg';
-import Cart from './assets/cart.svg';
+import Logo from '../assets/logo.svg';
+import Cart from '../assets/cart.svg';
 
 function Navigation() {
   return (

@@ -1,3 +1,5 @@
+import Button from '../components/Button';
+
 function Deals() {
   return (
     <div className='h-big w-8/12 gap-3 grid grid-cols-10 grid-rows-6'>
@@ -69,9 +71,7 @@ function Deals() {
               By-Products. There are no Wheat and Wheat By-Products on the
               premises of Big Rico's Pizza
             </p>
-            <button className='rounded-sm bg-red px-3 py-3 uppercase text-white whitespace-nowrap'>
-              Order Now
-            </button>
+            <Button text="Order Now" px={3} py={3} wrap="whitespace-nowrap" textColor="white" bgColor="red" />
           </div>
         </div>
       </div>
