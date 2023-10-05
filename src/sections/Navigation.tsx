@@ -1,32 +1,20 @@
 import Logo from '../assets/logo.svg';
 import Cart from '../assets/cart.svg';
+import NavItem from '../components/NavItem';
 
 function Navigation() {
   return (
     <nav className='bg-blue text-white flex justify-center font-oswald shadow-lg shadow-dark-grey/50'>
-      <ul className='flex w-8/12 items-center justify-between uppercase h-full'>
-        <li>
+      <ul className='flex w-8/12 items-center justify-between uppercase h-20'>
+        <li className="cursor-pointer">
           <img src={Logo} className='h-12' alt='Definitely Big Ricos logo' />
         </li>
-        <li className='flex flex-col items-center p-4 hover:shadow-menu transition-shadow duration-300 ease-linear delay-0'>
-          <span>Order</span>
-          <span>Online</span>
-        </li>
-        <li className='p-4 flex items-center h-full hover:shadow-menu transition-shadow duration-300 ease-linear delay-0'>
-          <span>Locations</span>
-        </li>
-        <li className='p-4 flex items-center h-fullhover:shadow-menu transition-shadow duration-300 ease-linear delay-0'>
-          Menu
-        </li>
-        <li className='p-4 flex items-center h-full hover:shadow-menu transition-shadow duration-300 ease-linear delay-0'>
-          Coupons
-        </li>
-        <li className='p-4 flex items-center h-full hover:shadow-menu transition-shadow duration-300 ease-linear delay-0'>
-          Tracker
-        </li>
-        <li className='p-4 flex items-center h-full hover:shadow-menu transition-shadow duration-300 ease-linear delay-0'>
-          Rewards
-        </li>
+        <NavItem text={<span>Order<br />Online</span>} />
+        <NavItem text='Locations' />
+        <NavItem text='Menu' />
+        <NavItem text='Coupons' />
+        <NavItem text='Tracker' />
+        <NavItem text='Rewards' />
         <li className='flex'>
           <div className='flex flex-col justify-right'>
             <span className='block w-0 h-0 border-solid border-t-0 border-r-[1.4rem] border-b-[1.4rem] border-l-0 border-t-blue border-r-white border-b-blue border-l-blue'></span>
@@ -53,11 +41,11 @@ function Navigation() {
           </span>
           <span className='block w-0 h-0 border-solid border-t-[1.35rem] border-b-[1.35rem] border-l-[1.35rem] border-r-0 border-t-blue border-b-blue border-r-blue border-l-white'></span>
         </li>
-        <li className='text-sm flex flex-col items-center p-4'>
+        <li className='text-sm flex flex-col items-center justify-center p-4 h-full bg-dark-blue cursor-pointer'>
           <span>Sign in & earn</span>
           <span>rewards</span>
         </li>
-        <li className='p-4 flex flex-col justify-center'>
+        <li className='p-4 flex flex-col justify-center cursor-pointer'>
           <img src={Cart} className='h-6' alt='cart icon' />
           <span>cart</span>
         </li>
