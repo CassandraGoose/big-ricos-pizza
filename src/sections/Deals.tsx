@@ -1,6 +1,7 @@
 import BigDeal from './BigDeal';
 import Rewards from './Rewards';
 import ComboDeal from './ComboDeal';
+import Carryout from './Carryout';
 
 function Deals() {
   return (
@@ -8,7 +9,7 @@ function Deals() {
       <BigDeal />
       <Rewards />
       <ComboDeal />
-      <div className='col-span-10 bg-light-grey'>im the footer</div>
+      <Carryout />
     </section>
   );
 }

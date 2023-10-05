@@ -36,7 +36,7 @@ function BigDeal() {
             Tomatoes
           </p>
         </div>
-        <div className='grid grid-col-5 grid-row-1 w-1/2'>
+        <div className='grid grid-col-5 grid-row-2 w-1/2'>
           <span className='custom-outline text-white text-6xl col-start-1 row-start-1 font-bold'>
             $
           </span>
@@ -45,12 +45,11 @@ function BigDeal() {
             aria-hidden='true'>
             $
           </span>
-
-          <span className='custom-outline text-white text-9xl col-start-2 col-end-3 row-start-1 font-bold mt-[-1rem]'>
+          <span className='custom-outline text-white text-9xl col-start-2 col-end-3 row-start-1 row-end-3 font-bold mt-[-1rem]'>
             10
           </span>
           <span
-            className='custom-outline-shadow text-white text-9xl col-start-2 col-end-3 row-start-1 font-bold mt-[-1rem]'
+            className='custom-outline-shadow text-white text-9xl col-start-2 col-end-3 row-start-1 row-end-3 font-bold mt-[-1rem]'
             aria-hidden='true'>
             10
           </span>
@@ -62,6 +61,7 @@ function BigDeal() {
             aria-hidden='true'>
             99
           </span>
+          <p className="col-start-3 col-end-4 row-start-2 text-white text-shadow normal-case italic text-3xl tracking-wider font-crimson">each</p>
         </div>
         <div className='flex items-end'>
           <p className='text-xxs text-white normal-case drop-shadow'>

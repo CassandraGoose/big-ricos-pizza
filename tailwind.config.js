@@ -22,6 +22,7 @@ export default {
       backgroundImage: {
         'deals': "url('/src/assets/tomatoes.png')",
         'combo-deal': "url('/src/assets/bogo_tomatoes.png')",
+        'spread': "url('/src/assets/spread.png')",
       },
       boxShadow: {
         'menu': 'rgba(0, 0, 0, 0.25) 0px 0px 0px 5rem inset'
@@ -38,7 +39,8 @@ export default {
       },
       fontFamily: {
         oswald: ["Oswald", "sans-serif"],
-        dm: ["DM Serif Display", "serif"]
+        dm: ["DM Serif Display", "serif"],
+        crimson: ["Crimson Text", "serif"],
       }
     },
   },
