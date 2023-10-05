@@ -21,6 +21,7 @@ export default {
       },
       backgroundImage: {
         'deals': "url('/src/assets/tomatoes.png')",
+        'combo-deal': "url('/src/assets/bogo_tomatoes.png')",
       },
       boxShadow: {
         'menu': 'rgba(0, 0, 0, 0.25) 0px 0px 0px 5rem inset'

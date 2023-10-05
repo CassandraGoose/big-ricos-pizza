@@ -14,6 +14,7 @@ function Button({
   };
 
   const xPaddings: { [key: string]: string } = {
+    2: 'px-2',
     3: 'px-3',
     5: 'px-5',
     14: 'px-14',
