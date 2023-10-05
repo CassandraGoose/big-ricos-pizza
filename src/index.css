@@ -3,3 +3,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.text-shadow {
+  text-shadow: 0 .125rem .125rem black;
+}
+
+.custom-outline-shadow {
+  text-shadow: #6635d0 -1px 1px 0px, #6635d0 -2px 2px 0px, #6635d0 -3px 3px 0px, #6635d0 -4px 4px 0px, #6635d0 -5px 5px 0px, #6635d0 -6px 6px 0px, #6635d0 -7px 7px 0px;
+}
+
+.custom-outline {
+  text-shadow: 1.41px 1.41px #6635d0, 2px 0 #6635d0, 1.41px -1.41px #6635d0,
+    0 -2px #6635d0, -1.41px -1.41px #6635d0, -2px 0 #6635d0,
+   -1.41px 1.41px #6635d0, 0 2px #6635d0;
+}
+
+.stack-behind {
+  margin-left: -1.5rem;
+}

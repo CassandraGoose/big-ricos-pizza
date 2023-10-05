@@ -4,7 +4,7 @@ import Cart from './assets/cart.svg';
 function Navigation() {
   return (
     <nav className='bg-blue text-white flex justify-center font-oswald shadow-lg shadow-dark-grey/50'>
-      <ul className='flex w-3/4 items-center justify-between uppercase h-full'>
+      <ul className='flex w-8/12 items-center justify-between uppercase h-full'>
         <li>
           <img src={Logo} className='h-12' alt='Definitely Big Ricos logo' />
         </li>
