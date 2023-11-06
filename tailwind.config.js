@@ -23,6 +23,7 @@ export default {
         'deals': "url('/src/assets/tomatoes.png')",
         'combo-deal': "url('/src/assets/bogo_tomatoes.png')",
         'spread': "url('/src/assets/spread.png')",
+        'menu-invitation': "url('/src/assets/menu_invitation.png')",
       },
       boxShadow: {
         'menu': 'rgba(0, 0, 0, 0.25) 0px 0px 0px 5rem inset'

@@ -2,6 +2,7 @@ import BigDeal from './BigDeal';
 import Rewards from './Rewards';
 import ComboDeal from './ComboDeal';
 import Carryout from './Carryout';
+import Pause from '../components/Pause';
 
 function Deals() {
   return (
@@ -10,6 +11,7 @@ function Deals() {
       <Rewards />
       <ComboDeal />
       <Carryout />
+      <Pause />
     </section>
   );
 }
