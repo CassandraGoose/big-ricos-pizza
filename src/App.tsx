@@ -2,6 +2,7 @@ import Navigation from './sections/Navigation';
 import StartOrder from './sections/StartOrder';
 import Deals from './sections/Deals';
 import MenuInvitation from './sections/MenuInvitation';
+import SplashFooter from './sections/SplashFooter';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Deals />
         <MenuInvitation />
       </main>
+      <SplashFooter />
     </>
   );
 }
