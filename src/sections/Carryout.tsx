@@ -29,7 +29,7 @@ function Carrout() {
           There is no wheat or wheat by-products on the premises.{' '}
         </p>
       </div>
-      <div className='w-1/3 flex justify-between items-center'>
+      <div className='w-1/3 flex md:flex-row flex-col justify-between items-center'>
         <div className='grid grid-col-3 grid-row-2 w-1/2'>
           <span className='custom-outline text-white text-6xl col-start-1 row-start-1 font-bold'>
             $

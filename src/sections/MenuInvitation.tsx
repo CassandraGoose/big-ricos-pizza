@@ -3,7 +3,7 @@ import BookIcon from '../assets/book_icon.svg';
 
 function MenuInvitation() {
   return (
-    <section className='flex flex-col items-center w-8/12'>
+    <section className='flex flex-col items-center md:w-8/12 w-11/12'>
       <p className='text-2xl font-medium text-grey normal-case'>
         Browse Our Menu
       </p>
