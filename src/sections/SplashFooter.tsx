@@ -127,7 +127,7 @@ function SplashFooter() {
                 </h6>
                 <div
                   className={`${
-                    accordion.isOpen ? 'max-h-16' : 'max-h-0 collapse'
+                    accordion.isOpen ? 'max-h-30' : 'max-h-0 collapse'
                   } transition-[max-height] duration-150 ease-in-out`}
                   aria-expanded={accordion.isOpen}
                   aria-labelledby={`accordion-header-${i}`}>
