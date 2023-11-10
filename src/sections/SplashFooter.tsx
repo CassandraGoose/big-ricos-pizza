@@ -57,7 +57,7 @@ function SplashFooter() {
     <section className='mt-4'>
       <div className='bg-light-grey text-dark-grey flex justify-center items center py-16'>
         <div className='w-8/12 flex flex-col items-center justify-between'>
-          <div className='w-full flex justify-between text-lg font-light leading-10'>
+          <div className='w-full flex justify-between text-sm font-light leading-8'>
             <ul className='footer-ul' aria-label='Our Company'>
               <li>Corporate</li>
               <li>Jobs</li>
