@@ -1,0 +1,10 @@
+ <svg viewBox='0 0 64.83 95.55' xmlns='http://www.w3.org/2000/svg'>
+  <path
+    d='m2 18h60.83v75.55h-60.83zm47.83-16-47.83 16h47.83zm-22.83 40.12h9.28m-15.94 9.86h22.6m-18.69 9.86h14.78m-18.69 9.86h22.6'
+    fill='none'
+    stroke='#fff'
+    stroke-linecap='round'
+    stroke-linejoin='round'
+    stroke-width='4'
+  />
+</svg>
