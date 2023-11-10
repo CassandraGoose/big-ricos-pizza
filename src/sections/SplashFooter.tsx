@@ -2,10 +2,10 @@ import { useState } from 'react';
 import placeholderLogo from '../assets/placeholder.webp';
 import placeHolderRadio from '../assets/placeholder_radio.png';
 import placeHolderSheriff from '../assets/placeholder_sheriff.png';
-import expandArrow from '../assets/expand_arrow.svg';
+import Accordion from '../components/Accordion';
 
 function SplashFooter() {
-  const accordionData = [
+  const legalAccordionData = [
     {
       title: 'Pay the Price for the Meal Deal',
       content: `You must ask for this offer while available. If you do not ask,
@@ -37,27 +37,83 @@ function SplashFooter() {
     },
   ];
 
-  const [accordions, updateAccordions] = useState(accordionData);
+  const linkAccordionData = [
+    {
+      title: 'Our Company',
+      content: () => (
+        <>
+          <li>Corporate</li>
+          <li>Jobs</li>
+          <li>About Big Rico's</li>
+        </>
+      ),
+      isOpen: false,
+    },
+    {
+      title: 'Our Pizza',
+      content: () => (
+        <>
+          <li>Nutrition</li>
+          <li>Allergen Info</li>
+          <li>Gluten Free Warning</li>
+          <li>Ingredients</li>
+        </>
+      ),
+      isOpen: false,
+    },
+    {
+      title: 'Additional Services',
+      content: () => (
+        <>
+          <li>Smart Slice School Lunch</li>
+          <li>Large Business Orders</li>
+          <li>Wedding Registry</li>
+          <li>Fundraising</li>
+          <li>Gift Cards</li>
+          <li>Real Estate</li>
+          <li>Recycling</li>
+        </>
+      ),
+      isOpen: false,
+    },
+    {
+      title: 'Customer Service',
+      content: () => (
+        <>
+          <li>Customer Support</li>
+          <li>Do Not Sell/Share My Info</li>
+          <li>Email & Text Offers</li>
+          <li>Carryout Insurance</li>
+          <li>Privacy</li>
+          <li>Legal</li>
+          <li>español</li>
+        </>
+      ),
+      isOpen: false,
+    },
+  ];
 
-  const toggleAccordion = (title: string) => {
-    const updatedAccordions = accordions.map((accordion) => {
-      if (accordion.title === title) {
-        return {
-          ...accordion,
-          isOpen: !accordion.isOpen,
-        };
-      }
-      return accordion;
-    });
-
-    updateAccordions(updatedAccordions);
-  };
+  const [legalAccordions, updateLegalAccordions] = useState(legalAccordionData);
+  const [linkAccordions, updateLinkAccordions] = useState(linkAccordionData);
 
   return (
     <section className='mt-4'>
-      <div className='bg-light-grey text-dark-grey flex justify-center items center py-16'>
-        <div className='w-8/12 flex flex-col items-center justify-between'>
-          <div className='w-full flex justify-between text-sm font-light leading-8'>
+      <div className='bg-light-grey text-dark-grey flex justify-center items center md:py-16'>
+        <div className='md:w-8/12 w-full flex flex-col items-center justify-between'>
+          <div className='w-full md:hidden flex flex-col justify-between font-light leading-8 bg-mid-grey'>
+            {linkAccordions.map((accordion, i) => (
+              <span key={accordion.title} className='border-b border-grey px-4'>
+                <Accordion
+                  children={<ul>{accordion.content()}</ul>}
+                  accordion={accordion}
+                  accordions={linkAccordions}
+                  updateAccordions={updateLinkAccordions}
+                  i={i}
+                />
+              </span>
+            ))}
+          </div>
+          <div className='w-11/12 md:flex justify-between text-sm font-light leading-8 bg-light-grey hidden'>
             <ul className='footer-ul' aria-label='Our Company'>
               <li>Corporate</li>
               <li>Jobs</li>
@@ -106,34 +162,15 @@ function SplashFooter() {
             />
           </div>
           <div className='flex flex-col w-full'>
-            {accordions.map((accordion, i) => (
-              <div
+            {legalAccordions.map((accordion, i) => (
+              <Accordion
                 key={accordion.title}
-                onClick={() => toggleAccordion(accordion.title)}>
-                <h6
-                  className='w-full my-2'
-                  key={accordion.title}
-                  id={`accordion-header-${i}`}>
-                  <button
-                    className='flex items-center justify-start font-bold'
-                    aria-contols={`accordion-panel-${i}`}>
-                    {accordion.title}
-                    <img
-                      className='h-4 w-auto ml-2'
-                      src={expandArrow}
-                      alt='arrow'
-                    />
-                  </button>
-                </h6>
-                <div
-                  className={`${
-                    accordion.isOpen ? 'max-h-30' : 'max-h-0 collapse'
-                  } transition-[max-height] duration-150 ease-in-out`}
-                  aria-expanded={accordion.isOpen}
-                  aria-labelledby={`accordion-header-${i}`}>
-                  {accordion.content}
-                </div>
-              </div>
+                children={<div>{accordion.content}</div>}
+                accordion={accordion}
+                accordions={legalAccordions}
+                updateAccordions={updateLegalAccordions}
+                i={i}
+              />
             ))}
           </div>
         </div>

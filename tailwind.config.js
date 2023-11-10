@@ -12,6 +12,7 @@ export default {
       white: '#F5F5F5',
       grey: '#777777',
       'light-grey': '#DBDBDB',
+      'mid-grey': '#bfbfbf',
       'dark-grey': '#333333',
       transparent: 'rgba(255, 255, 255, 0)'
     },
