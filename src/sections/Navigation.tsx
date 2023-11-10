@@ -6,8 +6,8 @@ import FreeRicos from '../components/FreeRicos';
 
 function Navigation() {
   return (
-    <nav className='bg-blue text-white flex md:flex-row flex-col md:justify-center justify-between md:px-auto font-oswald shadow-lg shadow-dark-grey/50'>
-      <ul className='flex md:w-8/12 w-full items-center justify-between uppercase md:h-20 h-14 px-6'>
+    <nav className='bg-blue text-white flex md:flex-row flex-col justify-center items-center md:px-auto font-oswald shadow-lg shadow-dark-grey/50'>
+      <ul className='flex md:w-8/12 w-11/12 items-center justify-between uppercase md:h-20 h-14'>
         <li className='md:hidden'>
           <Hamburger />
         </li>
@@ -44,13 +44,15 @@ function Navigation() {
           <span>cart</span>
         </li>
       </ul>
-      <ul className='md:hidden flex w-full items-center justify-between uppercase h-14 bg-white drop-shadow text-blue font-medium px-6'>
-        <li className='text-blue font-medium text-lg'>Tracker</li>
-        <li>
-          <FreeRicos light />
-        </li>
-        <li className='text-blue font-medium text-lg'>Sign In</li>
-      </ul>
+      <div className='md:hidden w-full bg-white drop-shadow text-blue font-medium h-14 flex items-center justify-center'>
+        <ul className='flex w-11/12 items-center justify-between uppercase'>
+          <li className='text-blue font-medium text-lg'>Tracker</li>
+          <li>
+            <FreeRicos light />
+          </li>
+          <li className='text-blue font-medium text-lg'>Sign In</li>
+        </ul>
+      </div>
     </nav>
   );
 }
