@@ -54,7 +54,7 @@ function SplashFooter() {
   };
 
   return (
-    <section className='mt-16'>
+    <section className='mt-4'>
       <div className='bg-light-grey text-dark-grey flex justify-center items center py-16'>
         <div className='w-8/12 flex flex-col items-center justify-between'>
           <div className='w-full flex justify-between text-lg font-light leading-10'>
