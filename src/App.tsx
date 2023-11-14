@@ -1,9 +1,9 @@
-import Navigation from './sections/Navigation';
-import StartOrder from './sections/StartOrder';
-import Deals from './sections/Deals';
-import MenuInvitation from './sections/MenuInvitation';
-import SplashFooter from './sections/SplashFooter';
-import LowerMenu from './sections/LowerMenu';
+import Navigation from './Main/Navigation/Navigation';
+import StartOrder from './Main/StartOrder';
+import Deals from './Main/Deals/Deals';
+import MenuInvitation from './Main/MenuInvitation';
+import SplashFooter from './Main/Footer/SplashFooter';
+import LowerMenu from './Main/LowerMenu';
 
 function App() {
   return (

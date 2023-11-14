@@ -1,7 +1,7 @@
-import Button from '../components/Button';
-import Pizza from '../assets/gf_pizza.png';
-import Cheese from '../assets/cheese.png';
-import Drinks from '../assets/drinks.png';
+import Button from '../../components/Button';
+import Pizza from '../../assets/gf_pizza.png';
+import Cheese from '../../assets/cheese.png';
+import Drinks from '../../assets/drinks.png';
 
 function Rewards() {
   return (<section className='row-start-1 row-end-3 col-start-7 col-end-11 border border-light-grey'>

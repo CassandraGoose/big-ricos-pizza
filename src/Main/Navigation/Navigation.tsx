@@ -1,8 +1,9 @@
-import Logo from '../assets/logo.svg';
-import Cart from '../assets/cart.svg';
-import NavItem from '../components/NavItem';
-import Hamburger from '../components/Hamburger';
-import FreeRicos from '../components/FreeRicos';
+import Logo from '../../assets/logo.svg';
+import Cart from '../../assets/cart.svg';
+import NavItem from './NavItem';
+import Hamburger from './Hamburger';
+import FreeRicos from './FreeRicos';
+import MobileLowerList from './MobileLowerList';
 
 function Navigation() {
   return (
@@ -44,15 +45,7 @@ function Navigation() {
           <span>cart</span>
         </li>
       </ul>
-      <div className='md:hidden w-full bg-white drop-shadow text-blue font-medium h-14 flex items-center justify-center'>
-        <ul className='flex w-11/12 items-center justify-between uppercase'>
-          <li className='text-blue font-medium text-lg'>Tracker</li>
-          <li>
-            <FreeRicos light />
-          </li>
-          <li className='text-blue font-medium text-lg'>Sign In</li>
-        </ul>
-      </div>
+      <MobileLowerList />
     </nav>
   );
 }

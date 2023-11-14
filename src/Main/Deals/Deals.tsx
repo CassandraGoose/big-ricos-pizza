@@ -2,7 +2,7 @@ import BigDeal from './BigDeal';
 import Rewards from './Rewards';
 import ComboDeal from './ComboDeal';
 import Carryout from './Carryout';
-import Pause from '../components/Pause';
+import Pause from './Pause';
 
 function Deals() {
   return (
