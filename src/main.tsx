@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Start from './Start/Start';
+import Order from './Order/Order';
 import Layout from './Layout';
 import ErrorPage from './ErrorPage';
 import './index.css';
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
         path: '/restaurants',
         element: <Start />,
       },
+      {
+        path: '/restaurants/order',
+        element: <Order />
+      }
     ],
   },
 ]);
