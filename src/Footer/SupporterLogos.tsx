@@ -1,6 +1,6 @@
-import placeholderLogo from '../../assets/placeholder.webp';
-import placeHolderRadio from '../../assets/placeholder_radio.png';
-import placeHolderSheriff from '../../assets/placeholder_sheriff.png';
+import placeholderLogo from '../assets/placeholder.webp';
+import placeHolderRadio from '../assets/placeholder_radio.png';
+import placeHolderSheriff from '../assets/placeholder_sheriff.png';
 
 function SupporterLogos() {
   return (

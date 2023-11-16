@@ -1,5 +1,5 @@
-import Logo from '../../assets/logo.svg';
-import Cart from '../../assets/cart.svg';
+import Logo from '../assets/logo.svg';
+import Cart from '../assets/cart.svg';
 import NavItem from './NavItem';
 import Hamburger from './Hamburger';
 import FreeRicos from './FreeRicos';
