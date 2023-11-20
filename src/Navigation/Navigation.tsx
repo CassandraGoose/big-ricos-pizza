@@ -20,7 +20,7 @@ function Navigation() {
           />
         </li>
         <li className='p-4 md:flex items-center h-full hover:shadow-menu transition-shadow duration-300 ease-linear delay-0 cursor-pointer md:visible hidden'>
-          <Link to={`restaurants/order`}><span>
+          <Link to={`restaurants`}><span>
             Order
             <br />
             Online
@@ -28,6 +28,9 @@ function Navigation() {
         </li>
         <li className='p-4 md:flex items-center h-full hover:shadow-menu transition-shadow duration-300 ease-linear delay-0 cursor-pointer md:visible hidden'>
           Locations
+          <Link to={`restaurants`}><span>
+            Locations
+          </span></Link>
         </li>
         <li className='p-4 md:flex items-center h-full hover:shadow-menu transition-shadow duration-300 ease-linear delay-0 cursor-pointer md:visible hidden'>
           Menu
