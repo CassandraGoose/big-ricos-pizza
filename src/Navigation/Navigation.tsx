@@ -13,11 +13,13 @@ function Navigation() {
           <Hamburger />
         </li>
         <li className='cursor-pointer flex items-center justify-center'>
-          <img
-            src={Logo}
-            className='h-12 min-w-[40px]'
-            alt='Definitely Big Ricos logo'
-          />
+          <Link to={`/`}>
+            <img
+              src={Logo}
+              className='h-12 min-w-[40px]'
+              alt='Definitely Big Ricos logo'
+            />
+          </Link>
         </li>
         <li className='p-4 md:flex items-center h-full hover:shadow-menu transition-shadow duration-300 ease-linear delay-0 cursor-pointer md:visible hidden'>
           <Link to={`restaurants`}><span>
@@ -27,7 +29,6 @@ function Navigation() {
           </span></Link>
         </li>
         <li className='p-4 md:flex items-center h-full hover:shadow-menu transition-shadow duration-300 ease-linear delay-0 cursor-pointer md:visible hidden'>
-          Locations
           <Link to={`restaurants`}><span>
             Locations
           </span></Link>
