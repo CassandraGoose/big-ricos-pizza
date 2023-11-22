@@ -1,11 +1,14 @@
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import ModalContext from '../Context/ModalContext';
 import Logo from '../assets/logo.svg';
 import Cart from '../assets/cart.svg';
 import Hamburger from './Hamburger';
 import FreeRicos from './FreeRicos';
 import MobileLowerList from './MobileLowerList';
 
-function Navigation() {
+function Navigation() { 
+  const { setModalVisible } = useContext(ModalContext);
   return (
     <nav className='bg-blue text-white flex md:flex-row flex-col justify-center items-center md:px-auto font-oswald shadow-lg shadow-dark-grey/50'>
       <ul className='flex md:w-8/12 w-11/12 items-center justify-between uppercase md:h-20 h-14'>
@@ -48,7 +51,7 @@ function Navigation() {
         <li className='md:inline hidden'>
           <FreeRicos light={false} />
         </li>
-        <li className='text-sm md:flex flex-col items-center justify-center p-4 h-full bg-dark-blue cursor-pointer hidden'>
+        <li className='text-sm md:flex flex-col items-center justify-center p-4 h-full bg-dark-blue cursor-pointer hidden' onClick={() => setModalVisible(true)}>
           <span>Sign in & earn</span>
           <span>rewards</span>
         </li>

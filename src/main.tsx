@@ -5,6 +5,7 @@ import Start from './Start/Start';
 import Order from './Order/Order';
 import Layout from './Layout';
 import ErrorPage from './ErrorPage';
+import ModalContextProvider from './Context/ModalContextProvider.tsx';
 import './index.css';
 
 const router = createBrowserRouter([
@@ -26,6 +27,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <ModalContextProvider>
+      <RouterProvider router={router} />
+    </ModalContextProvider>
   </React.StrictMode>
 );
