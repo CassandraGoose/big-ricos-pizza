@@ -7,7 +7,7 @@ import Modal from './components/Modal';
 
 function Layout() {
   const { modalVisible } = useContext(ModalContext);
-  console.log(modalVisible);
+
   return (
     <>
       {modalVisible && <Modal />}

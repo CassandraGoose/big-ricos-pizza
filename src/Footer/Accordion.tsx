@@ -27,7 +27,6 @@ function Accordion({
           isOpen: !accordion.isOpen,
         };
       }
-      console.log(accordion.isOpen);
       return accordion;
     });
 
