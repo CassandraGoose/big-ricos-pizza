@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Start from './Start/Start';
 import Order from './Order/Order';
+import Menu from './Menu/Menu';
 import Layout from './Layout';
 import ErrorPage from './ErrorPage';
 import ModalContextProvider from './Context/ModalContextProvider.tsx';
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: '/restaurants',
         element: <Order />
+      },
+      {
+        path: '/menu',
+        element: <Menu />
       }
     ],
   },

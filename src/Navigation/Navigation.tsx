@@ -7,7 +7,7 @@ import Hamburger from './Hamburger';
 import FreeRicos from './FreeRicos';
 import MobileLowerList from './MobileLowerList';
 
-function Navigation() { 
+function Navigation() {
   const { setModalVisible } = useContext(ModalContext);
   return (
     <nav className='bg-blue text-white flex md:flex-row flex-col justify-center items-center md:px-auto font-oswald shadow-lg shadow-dark-grey/50'>
@@ -25,19 +25,19 @@ function Navigation() {
           </Link>
         </li>
         <li className='p-4 md:flex items-center h-full hover:shadow-menu transition-shadow duration-300 ease-linear delay-0 cursor-pointer md:visible hidden'>
-          <Link to={`restaurants`}><span>
-            Order
-            <br />
-            Online
-          </span></Link>
+          <Link to={`restaurants`}>
+            <span>
+              Order
+              <br />
+              Online
+            </span>
+          </Link>
         </li>
         <li className='p-4 md:flex items-center h-full hover:shadow-menu transition-shadow duration-300 ease-linear delay-0 cursor-pointer md:visible hidden'>
-          <Link to={`restaurants`}><span>
-            Locations
-          </span></Link>
+          <Link to={`restaurants`}>Locations</Link>
         </li>
         <li className='p-4 md:flex items-center h-full hover:shadow-menu transition-shadow duration-300 ease-linear delay-0 cursor-pointer md:visible hidden'>
-          Menu
+          <Link to={`menu`}>Menu</Link>
         </li>
         <li className='p-4 md:flex items-center h-full hover:shadow-menu transition-shadow duration-300 ease-linear delay-0 cursor-pointer md:visible hidden'>
           Coupons
@@ -51,7 +51,9 @@ function Navigation() {
         <li className='md:inline hidden'>
           <FreeRicos light={false} />
         </li>
-        <li className='text-sm md:flex flex-col items-center justify-center p-4 h-full bg-dark-blue cursor-pointer hidden' onClick={() => setModalVisible(true)}>
+        <li
+          className='text-sm md:flex flex-col items-center justify-center p-4 h-full bg-dark-blue cursor-pointer hidden'
+          onClick={() => setModalVisible(true)}>
           <span>Sign in & earn</span>
           <span>rewards</span>
         </li>
