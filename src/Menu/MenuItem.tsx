@@ -9,7 +9,7 @@ interface Item {
 
 function MenuItem({ item }: { item: Item }) {
   return (
-    <div className='my-2 text-blue font-medium'>
+    <div className='my-2 text-blue font-medium hover:bg-blue hover:text-white'>
       <div className='w-full border border-light-grey overflow-clip max-h-20 flex items-center'>
         <img
           className='-ml-12 h-[200px] w-auto self-start'
