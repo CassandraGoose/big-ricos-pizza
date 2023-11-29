@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Start from './Start/Start';
 import Order from './Order/Order';
 import Menu from './Menu/Menu';
+import Coupons from './Coupons/Coupons';
 import Layout from './Layout';
 import ErrorPage from './ErrorPage';
 import ModalContextProvider from './Context/ModalContextProvider.tsx';
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: '/menu',
         element: <Menu />
+      },
+      {
+        path: '/coupons',
+        element: <Coupons />
       }
     ],
   },
