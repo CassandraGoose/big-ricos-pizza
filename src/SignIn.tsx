@@ -2,8 +2,8 @@ import Button from "./components/Button";
 
 function SignIn() {
   return (
-    <div>
-      <div className="flex justify-between">
+    <>
+      <div className="flex justify-center">
         <p className="text-3xl font-bold uppercase">
           You do not need to sign in.
         </p>
@@ -18,7 +18,7 @@ function SignIn() {
         </p>
         <Button text="Start Your Order" bgColor="red" xPadding="5" />
       </div>
-    </div>
+    </>
   );
 }
 
