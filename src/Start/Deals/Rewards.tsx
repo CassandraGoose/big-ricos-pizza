@@ -1,9 +1,14 @@
+import { useContext } from "react";
+import ModalContext from "../../Context/ModalContext";
+import ComingSoon from "../../ComingSoon";
 import Button from '../../components/Button';
 import Pizza from '../../assets/gf_pizza.png';
 import Cheese from '../../assets/cheese.png';
 import Drinks from '../../assets/drinks.png';
 
 function Rewards() {
+  const { setModalVisible, setModalContent } = useContext(ModalContext);
+  
   return (<section className='row-start-1 row-end-3 col-start-7 col-end-11 border border-light-grey'>
   <div className='grid grid-cols-3 items-center mt-1'>
     <div className='flex'>
@@ -28,7 +33,10 @@ function Rewards() {
         every 2 orders
       </div>
     </div>
-    <div className='col-start-3 row-span-2'>
+    <div className='col-start-3 row-span-2' onClick={() => {
+            setModalContent(<ComingSoon />);
+            setModalVisible(true);
+          }}>
       <Button text='Join Now' xPadding='5' bgColor='red' />
     </div>
     <div className='col-start-1 col-end-4 row-start-3 row-end-6 flex justify-around items-center'>

@@ -1,18 +1,32 @@
+import { useContext } from "react";
+import ModalContext from "../Context/ModalContext";
+import ComingSoon from "../ComingSoon";
+
 function FooterLinks() {
+  const { setModalVisible, setModalContent } = useContext(ModalContext);
+
+  const delegatedClick = (e:React.MouseEvent<HTMLLIElement> | React.MouseEvent<HTMLDivElement>) => {
+    const target = e.target as HTMLLIElement;
+    if (target.tagName === "LI") {
+      setModalContent(<ComingSoon />);
+      setModalVisible(true);
+    }
+  };
+
   return (
-    <div className='w-11/12 md:flex justify-between text-sm font-light leading-8 bg-light-grey hidden'>
-      <ul className='footer-ul' aria-label='Our Company'>
+    <div className='w-11/12 md:flex justify-between text-sm font-light leading-8 bg-light-grey hidden' onClick={(e) => delegatedClick(e)}>
+      <ul className='footer-ul cursor-pointer' aria-label='Our Company'>
         <li>Corporate</li>
         <li>Jobs</li>
         <li>About Big Rico's</li>
       </ul>
-      <ul className='footer-ul' aria-label='Our Pizza'>
+      <ul className='footer-ul cursor-pointer' aria-label='Our Pizza'>
         <li>Nutrition</li>
         <li>Allergen Info</li>
         <li>Gluten Free Warning</li>
         <li>Ingredients</li>
       </ul>
-      <ul className='footer-ul' aria-label='Additional Services'>
+      <ul className='footer-ul cursor-pointer' aria-label='Additional Services'>
         <li>Smart Slice School Lunch</li>
         <li>Large Business Orders</li>
         <li>Wedding Registry</li>
@@ -21,7 +35,7 @@ function FooterLinks() {
         <li>Real Estate</li>
         <li>Recycling</li>
       </ul>
-      <ul className='footer-ul' aria-label='Customer Service'>
+      <ul className='footer-ul cursor-pointer' aria-label='Customer Service'>
         <li>Customer Support</li>
         <li>Do Not Sell/Share My Info</li>
         <li>Email & Text Offers</li>

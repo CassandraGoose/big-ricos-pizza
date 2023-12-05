@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Button from '../components/Button';
 import BookIcon from '../assets/book_icon.svg';
 
@@ -12,7 +13,9 @@ function MenuInvitation() {
           <div className='h-auto w-12 mx-14 mb-6'>
            <img src={BookIcon} alt='book icon' />
           </div>
-          <Button text='View Full Menu' bgColor='red' xPadding='5' />
+          <Link to={`menu`}>
+            <Button text='View Full Menu' bgColor='red' xPadding='5' />
+          </Link>
         </div>
       </div>
     </section>

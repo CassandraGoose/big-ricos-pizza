@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Button from '../../components/Button';
 
 function BigDeal() {
@@ -70,7 +71,7 @@ function BigDeal() {
             By-Products. There are no Wheat and Wheat By-Products on the
             premises of Big Rico's Pizza
           </p>
-          <Button text='Order Now' xPadding='3' bgColor='red' />
+          <Link to={`restaurants`}><Button text='Order Now' xPadding='3' bgColor='red' /></Link>
         </div>
       </div>
     </section>
