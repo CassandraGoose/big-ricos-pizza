@@ -27,9 +27,8 @@ export default {
         'browse-menu': "url('/src/assets/content/browse_menu_pizza.webp')",
       },
       boxShadow: {
-        'menu': 'rgba(0, 0, 0, 0.25) 0px 0px 0px 5rem inset'
+        'menu': 'rgba(0, 0, 0, 0.25) 0px 0px 0px 5rem inset',
       },
-
       letterSpacing: {
         widest: '0.2rem',
         widester: '0.5rem'

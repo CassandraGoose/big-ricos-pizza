@@ -18,11 +18,11 @@ function StartOrder() {
         </div>
         <div aria-hidden="true" className="w-20 h-[2px] bg-light-grey"></div>
       </section>
-      <div className="my-2 mx-20 w-11/12">
-        <Link to={`restaurants`}>
-          <button className="md:hidden bg-red text-white uppercase w-full rounded-sm mt-2 text-2xl py-4">
+      <div className="md:hidden my-2 mx-20 w-11/12">
+        <Link to="restaurants" className="md:hidden w-full inline-block">
+          <span className="w-full block bg-red text-white uppercase rounded-sm mt-2 text-2xl py-4 text-center">
             Order Online
-          </button>
+          </span>
         </Link>
       </div>
     </>

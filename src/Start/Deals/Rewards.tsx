@@ -2,7 +2,7 @@ import { useContext } from "react";
 import ModalContext from "../../Context/ModalContext";
 import ComingSoon from "../../ComingSoon";
 import Button from '../../components/Button';
-import Pizza from '../../assets/content/gf_pizza.webp';
+import Pizza from '../../assets/content/menu_item_pizza.webp';
 import Cheese from '../../assets/content/cheese.webp';
 import Drinks from '../../assets/content/drinks.webp';
 
@@ -49,7 +49,7 @@ function Rewards() {
       <img className='w-24 h-auto' src={Pizza} alt='gluten free pizza' />
     </div>
     <div className='col-start-1 col-end-4 row-start-5 row-end-7 flex justify-around items-center z-10'>
-      <div className='bg-white rounded-full flex flex-col justify-center items-center h-12 w-12 shadow-lg border border-light-grey'>
+      <div className='bg-white rounded-full flex flex-col justify-center items-center h-12 w-12 shadow-deep border border-light-grey'>
         <div className='bg-white rounded-full flex flex-col justify-center items-center h-10 w-10 shadow-md border border-light-grey'>
           <div className='flex flex-col justify-center items-center h-8 w-8 text-red'>
             <span className='text-lg leading-none'>20</span>
@@ -57,7 +57,7 @@ function Rewards() {
           </div>
         </div>
       </div>
-      <div className='bg-white rounded-full flex flex-col justify-center items-center h-12 w-12 shadow-lg border border-light-grey'>
+      <div className='bg-white rounded-full flex flex-col justify-center items-center h-12 w-12 shadow-deep border border-light-grey'>
         <div className='bg-white rounded-full flex flex-col justify-center items-center h-10 w-10 shadow-md border border-light-grey'>
           <div className='flex flex-col justify-center items-center h-8 w-8 text-red'>
             <span className='text-lg leading-none'>40</span>
@@ -65,7 +65,7 @@ function Rewards() {
           </div>
         </div>
       </div>
-      <div className='bg-white rounded-full flex flex-col justify-center items-center h-12 w-12 shadow-lg border border-light-grey'>
+      <div className='bg-white rounded-full flex flex-col justify-center items-center h-12 w-12 shadow-deep border border-light-grey'>
         <div className='bg-white rounded-full flex flex-col justify-center items-center h-10 w-10 shadow-md border border-light-grey'>
           <div className='flex flex-col justify-center items-center h-8 w-8 text-red'>
             <span className='text-lg leading-none'>60</span>
@@ -75,7 +75,7 @@ function Rewards() {
       </div>
     </div>
     <div className="col-start-1 col-end-4 row-start-5 row-end-7 flex items-center">
-      <div className='h-6 bg-gradient-to-r from-blue to-red border-4 border-white border-l-0 rounded-r-md w-[95%] shadow-lg'></div>
+      <div className='h-6 bg-gradient-to-r from-blue to-red border-4 border-white border-l-0 rounded-r-md w-[95%] shadow-deep'></div>
     </div>
   </div>
   <p className='text-xxs normal-case'>
