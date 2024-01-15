@@ -85,6 +85,30 @@ const router = createBrowserRouter([
         path: '/recycling',
         element: <Tracker />
       },
+      {
+        path: '/customer-support',
+        element: <Tracker />
+      },
+      {
+        path: '/privacy',
+        element: <Tracker />
+      },
+      {
+        path: '/offers',
+        element: <Tracker />
+      },
+      {
+        path: '/insurance',
+        element: <Tracker />
+      },
+      {
+        path: '/legal',
+        element: <Tracker />
+      },
+      {
+        path: '/espanol',
+        element: <Tracker />
+      },
     ],
   },
 ]);

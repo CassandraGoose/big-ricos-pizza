@@ -7,6 +7,7 @@ import Hamburger from "./Hamburger";
 import FreeRicos from "./FreeRicos";
 import MobileLowerList from "./MobileLowerList";
 import SignIn from "../SignIn";
+import ComingSoon from "../ComingSoon";
 
 function Navigation() {
   const { setModalVisible, setModalContent } = useContext(ModalContext);
@@ -105,12 +106,12 @@ function Navigation() {
             role="button"
             tabIndex={0}
             onClick={() => {
-              setModalContent(<SignIn />);
+              setModalContent(<ComingSoon />);
               setModalVisible(true);
             }}
             onKeyDown={(e) => {
-              if (e.keyCode === 13) {
-                setModalContent(<SignIn />);
+              if (e.key === 'Enter') {
+                setModalContent(<ComingSoon />);
                 setModalVisible(true);
               }
             }}
