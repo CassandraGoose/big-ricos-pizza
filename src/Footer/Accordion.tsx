@@ -35,7 +35,7 @@ function Accordion({
 
   return (
     <div onClick={() => toggleAccordion(accordion.title)}>
-      <h6 className="w-full my-2" key={accordion.title}>
+      <p className="w-full my-2" key={accordion.title}>
         <button
           className="flex items-center justify-start font-bold"
           id={`accordion-title-${i}`}
@@ -52,7 +52,7 @@ function Accordion({
             alt="arrow"
           />
         </button>
-      </h6>
+      </p>
       <div
         id={`accordion-content-${i}`}
         className={`transition-[max-height] duration-300 ease-in ${
