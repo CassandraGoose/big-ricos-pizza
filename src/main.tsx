@@ -40,7 +40,51 @@ const router = createBrowserRouter([
       {
         path: '/rewards',
         element: <Rewards />
-      }
+      },
+      {
+        path: '/jobs',
+        element: <Tracker />
+      },
+      {
+        path: '/about',
+        element: <Tracker />
+      },
+      {
+        path: '/nutrition',
+        element: <Tracker />
+      },
+      {
+        path: '/ingredients',
+        element: <Tracker />
+      },
+      {
+        path: '/smart-school',
+        element: <Tracker />
+      },
+      {
+        path: '/business-orders',
+        element: <Tracker />
+      },
+      {
+        path: '/wedding-registry',
+        element: <Tracker />
+      },
+      {
+        path: '/fundraising',
+        element: <Tracker />
+      },
+      {
+        path: '/gift-cards',
+        element: <Tracker />
+      },
+      {
+        path: '/real-estate',
+        element: <Tracker />
+      },
+      {
+        path: '/recycling',
+        element: <Tracker />
+      },
     ],
   },
 ]);

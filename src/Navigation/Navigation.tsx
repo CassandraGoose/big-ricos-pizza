@@ -37,16 +37,16 @@ function Navigation() {
         <li className="p-4 md:flex items-center h-full hover:shadow-menu transition-shadow duration-300 ease-linear delay-0 cursor-pointer md:visible hidden">
           <NavLink to={`restaurants`}>Locations</NavLink>
         </li>
-        <NavLink
-          to={`menu`}
-          className={({ isActive }) =>
-            isActive ? "bg-dark-grey p-4 h-full flex items-center" : "p-4"
-          }
-        >
-          <li className="md:flex items-center h-full hover:shadow-menu transition-shadow duration-300 ease-linear delay-0 cursor-pointer md:visible hidden">
+        <li className="md:flex items-center h-full hover:shadow-menu transition-shadow duration-300 ease-linear delay-0 cursor-pointer md:visible hidden">
+          <NavLink
+            to={`menu`}
+            className={({ isActive }) =>
+              isActive ? "bg-dark-grey p-4 h-full flex items-center" : "p-4"
+            }
+          >
             Menu
-          </li>
-        </NavLink>
+          </NavLink>
+        </li>
         <li className="md:flex items-center h-full hover:shadow-menu transition-shadow duration-300 ease-linear delay-0 cursor-pointer md:visible hidden">
           <NavLink
             to={`coupons`}
