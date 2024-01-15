@@ -1,4 +1,4 @@
-import expandArrow from '../assets/icons/expand_arrow.svg';
+import expandArrow from "../assets/icons/expand_arrow.svg";
 
 interface Accordion {
   title: string;
@@ -35,27 +35,31 @@ function Accordion({
 
   return (
     <div onClick={() => toggleAccordion(accordion.title)}>
-      <h6
-        className='w-full my-2'
-        key={accordion.title}
-        id={`accordion-header-${i}`}>
-        <button className='flex items-center justify-start font-bold'>
+      <h6 className="w-full my-2" key={accordion.title}>
+        <button
+          className="flex items-center justify-start font-bold"
+          id={`accordion-title-${i}`}
+          aria-controls={`accordion-content-${i}`}
+          aria-expanded={accordion.isOpen}
+          type="button"
+        >
           {accordion.title}
           <img
             className={`h-4 w-auto ml-2 ${
-              accordion.isOpen ? 'rotate-90' : ''
+              accordion.isOpen ? "rotate-90" : ""
             } transition-all duration-300 ease-in`}
             src={expandArrow}
-            alt='arrow'
+            alt="arrow"
           />
         </button>
       </h6>
       <div
+        id={`accordion-content-${i}`}
         className={`transition-[max-height] duration-300 ease-in ${
-          accordion.isOpen ? 'max-h-60' : 'max-h-0 collapse'
+          accordion.isOpen ? "max-h-60" : "max-h-0 collapse"
         }`}
-        aria-expanded={accordion.isOpen}
-        aria-labelledby={`accordion-header-${i}`}>
+        aria-labelledby={`accordion-title-${i}`}
+      >
         {children}
       </div>
     </div>

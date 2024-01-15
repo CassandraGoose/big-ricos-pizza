@@ -1,10 +1,10 @@
-import { useState } from 'react';
-import Accordion from './Accordion';
+import { useState } from "react";
+import Accordion from "./Accordion";
 
 function SplashFooterAccordions() {
   const legalAccordionData = [
     {
-      title: 'Pay the Price for the Meal Deal',
+      title: "Pay the Price for the Meal Deal",
       content: `You must ask for this offer while available. If you do not ask,
         you will be charged a fee for stewed tomatoes according to the
         standard income sliding scale for stewed tomatoes. This offer is
@@ -13,7 +13,7 @@ function SplashFooterAccordions() {
       isOpen: true,
     },
     {
-      title: 'Carryout Options',
+      title: "Carryout Options",
       content: `You must explicitly and clearly request carryout. If you do not,
         you will be chained to the table and forced to eat your meal in
         the restaurant. This is in accordance with City Council
@@ -21,7 +21,7 @@ function SplashFooterAccordions() {
       isOpen: false,
     },
     {
-      title: 'Allergen Warning',
+      title: "Allergen Warning",
       content: `Wheat and Wheat By-Products are a dangerous material and are
         banned by the City Council. We cannot serve you Wheat or Wheat
         By-Products and you will not find any Wheat or Wheat By-Products
@@ -36,18 +36,20 @@ function SplashFooterAccordions() {
 
   const [legalAccordions, updateLegalAccordions] = useState(legalAccordionData);
 
-  return(<div className='flex flex-col w-full'>
-  {legalAccordions.map((accordion, i) => (
-    <Accordion
-      key={accordion.title}
-      children={<div>{accordion.content}</div>}
-      accordion={accordion}
-      accordions={legalAccordions}
-      updateAccordions={updateLegalAccordions}
-      i={i}
-    />
-  ))}
-</div>);
+  return (
+    <div className="flex flex-col w-full">
+      {legalAccordions.map((accordion, i) => (
+        <Accordion
+          key={accordion.title}
+          children={<div>{accordion.content}</div>}
+          accordion={accordion}
+          accordions={legalAccordions}
+          updateAccordions={updateLegalAccordions}
+          i={i}
+        />
+      ))}
+    </div>
+  );
 }
 
 export default SplashFooterAccordions;
