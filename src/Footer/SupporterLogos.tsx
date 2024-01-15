@@ -1,23 +1,23 @@
-import placeholderLogo from '../assets/placeholder.webp';
-import placeHolderRadio from '../assets/placeholder_radio.png';
-import placeHolderSheriff from '../assets/placeholder_sheriff.png';
+import nvccLogo from '../assets/icons/nvcc.webp';
+import nvcrLogo from '../assets/icons/nvcr.webp';
+import sspLogo from '../assets/icons/ssp.webp';
 
 function SupporterLogos() {
   return (
-    <div className='flex w-full justify-start items-center'>
+    <div className='flex w-full justify-start items-center mb-10'>
       <img
-        className='h-44 w-auto'
-        src={placeholderLogo}
+        className='h-40 w-auto'
+        src={nvccLogo}
         alt='night vale city council approves logo'
       />
       <img
-        className='h-32 w-auto'
-        src={placeHolderRadio}
+        className='h-40 w-auto ml-12'
+        src={nvcrLogo}
         alt='night vale community radio sponsor logo'
       />
       <img
-        className='h-32 w-auto'
-        src={placeHolderSheriff}
+        className='h-40 w-auto ml-12'
+        src={sspLogo}
         alt="sheriff's secret police logo"
       />
     </div>

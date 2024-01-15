@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import ModalContext from "../Context/ModalContext";
-import Logo from "../assets/logo.svg";
+import Logo from "../assets/icons/logo.webp";
 import Cart from "../assets/cart.svg";
 import Hamburger from "./Hamburger";
 import FreeRicos from "./FreeRicos";
