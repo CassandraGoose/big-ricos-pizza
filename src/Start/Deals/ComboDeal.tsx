@@ -1,5 +1,4 @@
-import { Link } from 'react-router-dom';
-import Button from "../../components/Button";
+import FakeButton from "../../components/FakeButton";
 
 function ComboDeal() {
   return (
@@ -48,9 +47,7 @@ function ComboDeal() {
           Gluten Free Pizza not included. Bowls of cheese not included. No
           substitutions permitted.
         </p>
-        <Link to={`restaurants`}>
-          <Button text="Order Now" bgColor="red" xPadding="2" />
-        </Link>
+        <FakeButton text="Order Now" bgColor="red" xPadding="2" nextPage="restaurants" />
       </div>
     </section>
   );

@@ -1,5 +1,4 @@
-import { Link } from 'react-router-dom';
-import Button from "../../components/Button";
+import FakeButton from "../../components/FakeButton";
 
 function Carrout() {
   return (
@@ -60,9 +59,7 @@ function Carrout() {
             each
           </p>
         </div>
-        <Link to={`restaurants`}>
-          <Button text="Order Now" bgColor="red" xPadding="2" />
-        </Link>
+        <FakeButton text="Order Now" bgColor="red" xPadding="2" nextPage="restaurants" />
       </div>
     </div>
   );

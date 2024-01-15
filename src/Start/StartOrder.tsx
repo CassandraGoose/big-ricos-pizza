@@ -1,5 +1,5 @@
-import Button from "../components/Button";
 import { Link } from "react-router-dom";
+import FakeButton from "../components/FakeButton";
 
 function StartOrder() {
   return (
@@ -8,13 +8,19 @@ function StartOrder() {
         <div aria-hidden="true" className="w-20 h-[2px] bg-light-grey"></div>
         <p className="text-2xl text-blue font-medium">Start your order</p>
         <div className="flex justify-center items-center">
-          <Link to={`restaurants`}>
-            <Button text="Delivery" xPadding="14" bgColor="red" />
-          </Link>
+          <FakeButton
+            text="Delivery"
+            xPadding="14"
+            bgColor="red"
+            nextPage="restaurants"
+          />
           <p className="font-dm lowercase text-xl mx-4 text-blue">or</p>
-          <Link to={`restaurants`}>
-            <Button text="Carryout" xPadding="14" bgColor="red" />
-          </Link>
+          <FakeButton
+            text="Carryout"
+            xPadding="14"
+            bgColor="red"
+            nextPage="restaurants"
+          />
         </div>
         <div aria-hidden="true" className="w-20 h-[2px] bg-light-grey"></div>
       </section>

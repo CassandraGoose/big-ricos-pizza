@@ -1,5 +1,4 @@
-import { Link } from 'react-router-dom';
-import Button from '../../components/Button';
+import FakeButton from '../../components/FakeButton';
 
 function BigDeal() {
   return (
@@ -71,7 +70,7 @@ function BigDeal() {
             By-Products. There are no Wheat and Wheat By-Products on the
             premises of Big Rico's Pizza
           </p>
-          <Link to={`restaurants`}><Button text='Order Now' xPadding='3' bgColor='red' /></Link>
+          <FakeButton text='Order Now' xPadding='3' bgColor='red' nextPage='/restaurants' />
         </div>
       </div>
     </section>

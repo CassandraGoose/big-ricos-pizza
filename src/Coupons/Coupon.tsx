@@ -1,4 +1,4 @@
-import Button from '../components/Button';
+import FakeButton from '../components/FakeButton';
 
 function Coupon({ specialInfo, dealTitle, cost }: { specialInfo: JSX.Element, dealTitle: string,  cost: JSX.Element }) {
   return (
@@ -16,7 +16,7 @@ function Coupon({ specialInfo, dealTitle, cost }: { specialInfo: JSX.Element, de
       <div className="col-start-3 row-start-2 flex flex-col p-2">
         {cost}
         <div className="w-full flex justify-center items-center">
-          <Button text="Order Now" xPadding="8" bgColor="red" />
+          <FakeButton text="Order Now" xPadding="8" bgColor="red" nextPage="/restaurants" />
         </div>
       </div>
       <p className="col-start-1 col-end-4 row-start-6 text-xxs normal-case drop-shadow p-2">

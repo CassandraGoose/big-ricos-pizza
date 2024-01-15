@@ -1,6 +1,5 @@
-import Button from "./components/Button";
-
 function SignIn() {
+
   return (
     <>
       <div className="flex justify-center">
@@ -16,7 +15,6 @@ function SignIn() {
           Rewards will be calculated and collected on the profile we keep on
           the premises at Big Rico's brick and mortar location.
         </p>
-        <Button text="Start Your Order" bgColor="red" xPadding="5" />
       </div>
     </>
   );

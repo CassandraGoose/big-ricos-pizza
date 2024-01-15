@@ -1,7 +1,6 @@
 import { useContext } from "react";
 import ModalContext from "../../Context/ModalContext";
 import ComingSoon from "../../ComingSoon";
-import Button from '../../components/Button';
 import Pizza from '../../assets/content/menu_item_pizza.webp';
 import Cheese from '../../assets/content/cheese.webp';
 import Drinks from '../../assets/content/drinks.webp';
@@ -33,11 +32,11 @@ function Rewards() {
         every 2 orders
       </div>
     </div>
-    <div className='col-start-3 row-span-2' onClick={() => {
-            setModalContent(<ComingSoon />);
-            setModalVisible(true);
-          }}>
-      <Button text='Join Now' xPadding='5' bgColor='red' />
+    <div className='col-start-3 row-span-2'>
+      <button className="p-5 bg-red whitespace-nowrap text-white uppercase rounded-sm" onClick={() => {
+        setModalContent(<ComingSoon />);
+        setModalVisible(true);
+      }}>Join Now</button>
     </div>
     <div className='col-start-1 col-end-4 row-start-3 row-end-6 flex justify-around items-center'>
       <img
