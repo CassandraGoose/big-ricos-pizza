@@ -3,7 +3,7 @@ import Button from "../../components/Button";
 
 function ComboDeal() {
   return (
-    <section className="col-start-7 row-start-3 row-end-5 col-end-11 flex flex-col justify-between bg-combo-deal bg-cover bg-bottom p-2">
+    <section className="col-start-7 row-start-3 row-end-5 col-end-11 flex flex-col justify-between bg-combo-deal bg-cover bg-center p-2">
       <div className="w-1/2 flex">
         <span className="block w-0 h-0 border-solid border-t-[1rem] border-b-[1rem] border-r-[0.75rem] border-l-0 border-t-transparent border-b-transparent border-l-transparent border-r-white"></span>
         <p className="flex flex-col justify-center items-center bg-white text-blue px-3 py-1 text-base whitespace-nowrap">

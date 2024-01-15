@@ -1,5 +1,5 @@
-import Delivery from '../assets/delivery.svg';
-import Carryout from '../assets/carryout.svg';
+import Delivery from '../assets/icons/delivery.svg';
+import Carryout from '../assets/icons/carryout.svg';
 
 function Order() {
   return (

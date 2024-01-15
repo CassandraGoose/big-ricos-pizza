@@ -3,12 +3,12 @@ import Button from "../../components/Button";
 
 function Carrout() {
   return (
-    <div className="col-span-10 bg-spread bg-cover bg-right-bottom flex p-2">
+    <div className="col-span-10 bg-carryout-deal bg-cover bg-center flex p-2">
       <div className="w-2/3">
         <div className="w-1/2 flex">
           <span className="block w-0 h-0 border-solid border-t-[1rem] border-b-[1rem] border-r-[0.75rem] border-l-0 border-t-transparent border-b-transparent border-l-transparent border-r-white"></span>
           <p className="flex flex-col justify-center items-center bg-white text-blue px-3 py-1 text-base whitespace-nowrap">
-            Combo Deal
+            Carryout Deal
           </p>
           <span className="block w-0 h-0 border-solid border-t-[1rem] border-b-[1rem] border-l-[0.75rem] border-r-0 border-t-transparent border-b-transparent border-r-transparent border-l-white"></span>
         </div>
@@ -35,7 +35,6 @@ function Carrout() {
           <span className="custom-outline text-white text-6xl col-start-1 row-start-1 font-bold">
             $
           </span>
-          x
           <span className="custom-outline-shadow text-white text-6xl col-start-1 row-start-1 font-bold">
             $
           </span>

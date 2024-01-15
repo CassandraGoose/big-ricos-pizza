@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import ModalContext from "../Context/ModalContext";
-import x from "../assets/x.svg";
+import x from "../assets/icons/x.svg";
 
 function Modal() {
   const { setModalVisible, modalContent } = useContext(ModalContext);

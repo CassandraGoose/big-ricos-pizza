@@ -2,9 +2,9 @@ import { useContext } from "react";
 import ModalContext from "../../Context/ModalContext";
 import ComingSoon from "../../ComingSoon";
 import Button from '../../components/Button';
-import Pizza from '../../assets/gf_pizza.png';
-import Cheese from '../../assets/cheese.png';
-import Drinks from '../../assets/drinks.png';
+import Pizza from '../../assets/content/gf_pizza.webp';
+import Cheese from '../../assets/content/cheese.webp';
+import Drinks from '../../assets/content/drinks.webp';
 
 function Rewards() {
   const { setModalVisible, setModalContent } = useContext(ModalContext);

@@ -1,9 +1,8 @@
-import Placeholder from '../assets/placeholder_menu_image.png';
+import Pizza from '../assets/content/menu_item_pizza.webp';
 
 interface Item {
   title: string;
   description: string;
-  image: string;
   featuredItem: boolean;
 }
 
@@ -13,7 +12,7 @@ function MenuItem({ item }: { item: Item }) {
       <div className='w-full border border-light-grey overflow-clip max-h-20 flex items-center'>
         <img
           className='-ml-12 h-[200px] w-auto self-start'
-          src={Placeholder}
+          src={Pizza}
           alt={item.description}
         />
         <h2 className='text-xl p-8'>{item.title}</h2>

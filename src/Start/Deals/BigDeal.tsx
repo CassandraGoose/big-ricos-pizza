@@ -3,7 +3,7 @@ import Button from '../../components/Button';
 
 function BigDeal() {
   return (
-    <section className='md:row-start-1 md:row-end-5 md:col-span-6 bg-deals bg-fit bg-cover bg-right'>
+    <section className='md:row-start-1 md:row-end-5 md:col-span-6 bg-big-deal bg-fit bg-cover bg-right'>
       <div className='flex flex-col h-full justify-between p-4'>
         <div className='w-1/2 flex'>
           <span className='block w-0 h-0 border-solid border-t-[1.35rem] border-b-[1.35rem] border-r-[0.75rem] border-l-0 border-t-transparent border-b-transparent border-l-transparent border-r-white'></span>
@@ -65,7 +65,7 @@ function BigDeal() {
           <p className="col-start-3 col-end-4 row-start-2 text-white text-shadow normal-case italic text-3xl tracking-wider font-crimson">each</p>
         </div>
         <div className='flex items-end'>
-          <p className='text-xxs text-white normal-case drop-shadow'>
+          <p className='text-xxs text-white normal-case text-shadow'>
             This deal stricly adheres to the City Council's permanent ban on
             Wheat and Wheat By-Products. We do not serve Wheat and Wheat
             By-Products. There are no Wheat and Wheat By-Products on the

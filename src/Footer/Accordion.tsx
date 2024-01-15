@@ -1,4 +1,4 @@
-import expandArrow from '../assets/expand_arrow.svg';
+import expandArrow from '../assets/icons/expand_arrow.svg';
 
 interface Accordion {
   title: string;

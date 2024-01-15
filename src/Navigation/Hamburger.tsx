@@ -1,4 +1,4 @@
-import HamburgerLine from '../assets/hamburger_line.svg';
+import HamburgerLine from '../assets/icons/hamburger_line.svg';
 
 function Hamburger() {
   return (

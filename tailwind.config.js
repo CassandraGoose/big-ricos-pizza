@@ -6,9 +6,9 @@ export default {
   ],
   theme: {
     colors: {
-      blue: '#5c5c5c', // #29628D
-      'dark-blue': '#4f4f4f', // #245779,
-      red: '#6635d0', // #D0343E
+      blue: '#5c5c5c', 
+      'dark-blue': '#4f4f4f',
+      red: '#6635d0',
       white: '#F5F5F5',
       grey: '#777777',
       'light-grey': '#DBDBDB',
@@ -21,10 +21,10 @@ export default {
         'big': '52rem',
       },
       backgroundImage: {
-        'deals': "url('/src/assets/tomatoes.png')",
-        'combo-deal': "url('/src/assets/bogo_tomatoes.png')",
-        'spread': "url('/src/assets/spread.png')",
-        'menu-invitation': "url('/src/assets/menu_invitation.png')",
+        'big-deal': "url('/src/assets/content/big_deal_tomatoes.webp')",
+        'combo-deal': "url('/src/assets/content/combo_deal_tomatoes.webp')",
+        'carryout-deal': "url('/src/assets/content/carryout_deal_spread.webp')",
+        'browse-menu': "url('/src/assets/content/browse_menu_pizza.webp')",
       },
       boxShadow: {
         'menu': 'rgba(0, 0, 0, 0.25) 0px 0px 0px 5rem inset'
