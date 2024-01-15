@@ -7,7 +7,6 @@ import Hamburger from "./Hamburger";
 import FreeRicos from "./FreeRicos";
 import MobileLowerList from "./MobileLowerList";
 import SignIn from "../SignIn";
-import ComingSoon from "../ComingSoon";
 
 function Navigation() {
   const { setModalVisible, setModalContent } = useContext(ModalContext);
@@ -38,52 +37,87 @@ function Navigation() {
         <li className="p-4 md:flex items-center h-full hover:shadow-menu transition-shadow duration-300 ease-linear delay-0 cursor-pointer md:visible hidden">
           <NavLink to={`restaurants`}>Locations</NavLink>
         </li>
-        <li className="md:flex items-center h-full hover:shadow-menu transition-shadow duration-300 ease-linear delay-0 cursor-pointer md:visible hidden">
-          <NavLink to={`menu`} className={(({ isActive }) => (isActive ? 'bg-dark-grey p-4 h-full flex items-center': 'p-4'))}>Menu</NavLink>
-        </li>
-        <li className="md:flex items-center h-full hover:shadow-menu transition-shadow duration-300 ease-linear delay-0 cursor-pointer md:visible hidden">
-          <NavLink to={`coupons`} className={(({ isActive }) => (isActive ? 'bg-dark-grey p-4 h-full flex items-center': 'p-4'))}>Coupons</NavLink>
-        </li>
-        <li
-          className="p-4 md:flex items-center h-full hover:shadow-menu transition-shadow duration-300 ease-linear delay-0 cursor-pointer md:visible hidden"
-          onClick={() => {
-            setModalContent(<ComingSoon />);
-            setModalVisible(true);
-          }}
+        <NavLink
+          to={`menu`}
+          className={({ isActive }) =>
+            isActive ? "bg-dark-grey p-4 h-full flex items-center" : "p-4"
+          }
         >
-          Tracker
+          <li className="md:flex items-center h-full hover:shadow-menu transition-shadow duration-300 ease-linear delay-0 cursor-pointer md:visible hidden">
+            Menu
+          </li>
+        </NavLink>
+        <li className="md:flex items-center h-full hover:shadow-menu transition-shadow duration-300 ease-linear delay-0 cursor-pointer md:visible hidden">
+          <NavLink
+            to={`coupons`}
+            className={({ isActive }) =>
+              isActive ? "bg-dark-grey p-4 h-full flex items-center" : "p-4"
+            }
+          >
+            Coupons
+          </NavLink>
         </li>
-        <li
-          className="p-4 md:flex items-center h-full hover:shadow-menu transition-shadow duration-300 ease-linear delay-0 cursor-pointer md:visible hidden"
-          onClick={() => {
-            setModalContent(<ComingSoon />);
-            setModalVisible(true);
-          }}
-        >
-          Rewards
+        <li className="md:flex items-center h-full hover:shadow-menu transition-shadow duration-300 ease-linear delay-0 cursor-pointer md:visible hidden">
+          <NavLink
+            to={`tracker`}
+            className={({ isActive }) =>
+              isActive ? "bg-dark-grey p-4 h-full flex items-center" : "p-4"
+            }
+          >
+            Tracker
+          </NavLink>
+        </li>
+        <li className="md:flex items-center h-full hover:shadow-menu transition-shadow duration-300 ease-linear delay-0 cursor-pointer md:visible hidden">
+          <NavLink
+            to={`rewards`}
+            className={({ isActive }) =>
+              isActive ? "bg-dark-grey p-4 h-full flex items-center" : "p-4"
+            }
+          >
+            Rewards
+          </NavLink>
         </li>
         <li className="md:inline hidden">
           <FreeRicos light={false} />
         </li>
-        <li
-          className="text-sm md:flex flex-col items-center justify-center p-4 h-full bg-dark-blue cursor-pointer hidden"
-          onClick={() => {
-            setModalContent(<SignIn />);
-            setModalVisible(true);
-          }}
-        >
-          <span>Sign in & earn</span>
-          <span>rewards</span>
+        <li className="text-sm md:flex flex-col items-center justify-center p-4 h-full bg-dark-blue cursor-pointer hidden ml-2">
+          <span
+            className="flex flex-col items-center"
+            role="button"
+            tabIndex={0}
+            onClick={() => {
+              setModalContent(<SignIn />);
+              setModalVisible(true);
+            }}
+            onKeyDown={(e) => {
+              if (e.keyCode === 13) {
+                setModalContent(<SignIn />);
+                setModalVisible(true);
+              }
+            }}
+          >
+            <span>Sign in & earn</span>
+            <span>rewards</span>
+          </span>
         </li>
-        <li
-          className="p-4 flex flex-col justify-center cursor-pointer"
-          onClick={() => {
-            setModalContent(<ComingSoon />);
-            setModalVisible(true);
-          }}
-        >
-          <img src={Cart} className="h-6" alt="cart icon" />
-          <span>cart</span>
+        <li className="p-4 flex flex-col justify-center cursor-pointer">
+          <span
+            role="button"
+            tabIndex={0}
+            onClick={() => {
+              setModalContent(<SignIn />);
+              setModalVisible(true);
+            }}
+            onKeyDown={(e) => {
+              if (e.keyCode === 13) {
+                setModalContent(<SignIn />);
+                setModalVisible(true);
+              }
+            }}
+          >
+            <img src={Cart} className="h-6" alt="cart icon" />
+            <span>cart</span>
+          </span>
         </li>
       </ul>
       <MobileLowerList />

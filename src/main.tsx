@@ -5,6 +5,8 @@ import Start from './Start/Start';
 import Order from './Order/Order';
 import Menu from './Menu/Menu';
 import Coupons from './Coupons/Coupons';
+import Tracker from './Tracker/Tracker';
+import Rewards from './Rewards/Rewards';
 import Layout from './Layout';
 import ErrorPage from './ErrorPage';
 import ModalContextProvider from './Context/ModalContextProvider.tsx';
@@ -30,6 +32,14 @@ const router = createBrowserRouter([
       {
         path: '/coupons',
         element: <Coupons />
+      },
+      {
+        path: '/tracker',
+        element: <Tracker />
+      },
+      {
+        path: '/rewards',
+        element: <Rewards />
       }
     ],
   },
