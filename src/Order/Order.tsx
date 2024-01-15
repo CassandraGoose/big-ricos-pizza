@@ -11,31 +11,31 @@ function Order() {
             How do you want your Big Rico's today?
           </h2>
           <div className='flex justify-center items-center'>
-            <div className='flex flex-col items-center justify-around border-2 border-blue px-10 py-4 m-4 min-w-1/3 md:h-[9rem] h-[10rem]'>
+            <div className='flex flex-col items-center justify-around border-2 border-blue md:px-10 px-6 py-4 m-4 min-w-1/3 md:h-[9rem] h-[10rem]'>
               <span className='flex justify-center items-center'>
                 <img
-                  className='h-12 w-12 px-2'
+                  className='md:h-12 md:w-12 h-8 w-8 px-2'
                   src={Delivery}
                   alt='delivery car'
                 />
-                <h3 className='xl:text-2xl lg:text-xl text-md uppercase'>Delivery</h3>
+                <h3 className='xl:text-2xl lg:text-xl md:text-md text-sm uppercase'>Delivery</h3>
               </span>
               <ul className='list-disc lg:text-sm text-xs font-medium'>
                 <li>Traditional Delivery</li>
                 <li>Big Rico's Hotspot</li>
               </ul>
             </div>
-            <span className='uppercase'>- or -</span>
-            <div className='flex flex-col items-center justify-around border-2 border-blue px-10 py-4 m-4 min-w-1/3 md:h-[9rem] h-[10rem]'>
+            <span className='uppercase md:text-xl text-xxs'>- or -</span>
+            <div className='flex flex-col items-center justify-around border-2 border-blue md:px-10 px-6 py-4 m-4 min-w-1/3 md:h-[9rem] h-[10rem]'>
               <span className='flex justify-center items-center'>
                 <img
-                  className='h-14 w-14 px-1'
+                  className='md:h-12 md:w-12 h-8 w-8 px-1'
                   src={Carryout}
                   alt='carryout icon'
                 />
-                <h3 className='xl:text-2xl lg:text-lg text-md uppercase font'>Carryout</h3>
+                <h3 className='xl:text-2xl lg:text-lg md:text-md text-sm uppercase font'>Carryout</h3>
               </span>
-              <ul className='list-disc lg:text-sm text-xs font-medium '>
+              <ul className='list-disc lg:text-sm text-xs font-medium'>
                 <li>Carside Delivery</li>
                 <li>Store Pickup</li>
                 <li>Pick-Up Window</li>

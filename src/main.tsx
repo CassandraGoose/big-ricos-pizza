@@ -109,6 +109,10 @@ const router = createBrowserRouter([
         path: '/espanol',
         element: <Tracker />
       },
+      {
+        path: '/builder',
+        element: <Tracker />
+      }
     ],
   },
 ]);
