@@ -46,17 +46,17 @@ function Rewards() {
         </div>
         <div className="col-start-1 col-end-4 row-start-3 row-end-6 flex justify-around items-center h-24">
           <img
-            className="xl:w-24 lg:w-20 md:w-16 h-auto"
+            className="xl:w-24 lg:w-20 md:w-16 w-24 h-auto"
             src={Cheese}
             alt="bowl of melted cheese"
           />
           <img
-            className="xl:w-24 lg:w-20 md:w-16 h-auto"
+            className="xl:w-24 lg:w-20 md:w-16 w-24 h-auto"
             src={Drinks}
             alt="two drinks"
           />
           <img
-            className="xl:w-24 lg:w-20 md:w-16 h-auto"
+            className="xl:w-24 lg:w-20 md:w-16 w-24 h-auto"
             src={Pizza}
             alt="gluten free pizza"
           />
