@@ -34,7 +34,7 @@ function Accordion({
   };
 
   return (
-    <div onClick={() => toggleAccordion(accordion.title)}>
+    <div onClick={() => toggleAccordion(accordion.title)} onKeyDown={(e) => e.key === 'Enter'} role="button" tabIndex={0}>
       <p className="w-full my-2" key={accordion.title}>
         <button
           className="flex items-center justify-start font-bold"
