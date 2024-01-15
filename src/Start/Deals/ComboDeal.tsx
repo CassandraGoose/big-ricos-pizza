@@ -14,8 +14,8 @@ function ComboDeal() {
         Buy one handful of <span className=" italic">stewed tomatoes</span>, get
         one free!
       </p>
-      <div className="flex justify-end items-end h-24">
-        <div className="grid grid-col-3 grid-row-1 w-1/3">
+      <div className="flex lg:justify-end ">
+        <div className="grid grid-col-3 grid-row-1 lg:w-1/3 w-1/2">
           <span className="custom-outline text-white text-4xl col-start-1 row-start-1 font-bold">
             $
           </span>
@@ -42,7 +42,7 @@ function ComboDeal() {
           </span>
         </div>
       </div>
-      <div className="flex justify-between items-end">
+      <div className="flex justify-between">
         <p className="text-white text-xxs drop-shadow normal-case w-1/2">
           Gluten Free Pizza not included. Bowls of cheese not included. No
           substitutions permitted.

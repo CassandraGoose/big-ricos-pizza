@@ -27,7 +27,7 @@ function Navigation() {
           <NavLink to={`/`}>
             <img
               src={Logo}
-              className="h-12 min-w-[40px]"
+              className="h-12 min-w-[48px]"
               alt="Definitely Big Ricos logo"
             />
           </NavLink>

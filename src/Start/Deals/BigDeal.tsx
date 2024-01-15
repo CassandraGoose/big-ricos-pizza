@@ -11,11 +11,11 @@ function BigDeal() {
           </p>
           <span className='block w-0 h-0 border-solid border-t-[1.35rem] border-b-[1.35rem] border-l-[0.75rem] border-r-0 border-t-transparent border-b-transparent border-r-transparent border-l-white'></span>
         </div>
-        <p className='text-6xl text-white font-medium w-2/3 text-shadow'>
+        <p className='xl:text-6xl lg:text-5xl md:text-4xl text-3xl text-white font-medium w-2/3 text-shadow'>
           Pay the price for the meal
         </p>
-
-        <div className='flex flex-col items-center w-1/3 space-y-2'>
+        <div className="flex ">
+        <div className='flex flex-col items-center'>
           <p className='text-3xl tracking-widester text-white text-shadow'>
             including
           </p>
@@ -35,6 +35,7 @@ function BigDeal() {
           <p className='text-3xl tracking-widester text-white text-shadow'>
             Tomatoes
           </p>
+        </div>
         </div>
         <div className='grid grid-col-5 grid-row-2 w-1/2'>
           <span className='custom-outline text-white text-6xl col-start-1 row-start-1 font-bold'>
