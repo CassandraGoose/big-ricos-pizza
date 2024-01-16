@@ -16,8 +16,8 @@ This project is a re-creation and parady of the [Domino's Website](https://web.a
 ---
 
 ## Check It Out
-![Animated gif of website being used in mobile view](https://i.imgur.com/KMC7gfQ.gif)
-![Animated gif of website being used in desktop view](https://i.imgur.com/tU7VcGg.gif)
+![Animated gif of website being used in mobile view](https://i.imgur.com/QV0LCdb.gif)
+![Animated gif of website being used in desktop view](https://i.imgur.com/3HnkdBK.gif)
 
 ## Goals
 
