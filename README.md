@@ -1,6 +1,8 @@
-# Big Rico's Pizza
+# [Big Rico's Pizza](https://big-ricos-pizza.vercel.app/)
 
 This project is a re-creation and parady of the [Domino's Website](https://web.archive.org/web/20231007053218/https://www.dominos.com/) in order to practice TailwindCSS and matching comps. The parody is Night Vale themed and features references to the podcast and books. 
+
+---
 
 ## Tech Used
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
@@ -11,16 +13,23 @@ This project is a re-creation and parady of the [Domino's Website](https://web.a
 ![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white)
 ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
 
+---
+
+## Check It Out
+![Animated gif of website being used in mobile view](https://i.imgur.com/KMC7gfQ.gif)
+![Animated gif of website being used in desktop view](https://i.imgur.com/tU7VcGg.gif)
+
 ## Goals
 
-This site was not built to be a pixel perfect recreation of the Domino's site. This project was build with the following goals in mind: 
+This site was not built to be a pixel perfect recreation of the Domino's site. This project was built with the following goals in mind: 
 - get experience with Tailwind CSS
 - get a vague sense of what a complicated, production application might be like in regards to styles and design
 - have fun
 
-## Important Note
+## Important Notes
 
-The design is based on Domnino's website from 2023 and, because of this, the Domino's website may now look very different. Please find the October 2023 Domino's site [here](https://web.archive.org/web/20231007053218/https://www.dominos.com/).
+- The design is based on Domnino's website from 2023 and, because of this, the Domino's website may now look very different. Please find the October 2023 Domino's site [here](https://web.archive.org/web/20231007053218/https://www.dominos.com/).
+- The accessibility for this application could still be improved! I'm always learning. 
 
 ## Other Notes
 
