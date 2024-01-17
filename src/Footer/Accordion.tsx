@@ -19,22 +19,31 @@ function Accordion({
   updateAccordions: (accordions: Accordion[]) => Accordion[];
   i: number;
 }) {
-  const toggleAccordion = (title: string) => {
-    const updatedAccordions = accordions.map((accordion) => {
-      if (accordion.title === title) {
-        return {
-          ...accordion,
-          isOpen: !accordion.isOpen,
-        };
-      }
-      return accordion;
-    });
+  const toggleAccordion = (title: string, e?: React.KeyboardEvent) => {
+    if (!e || e.key === "Enter") {
+      const updatedAccordions = accordions.map((accordion) => {
+        if (accordion.title === title) {
+          return {
+            ...accordion,
+            isOpen: !accordion.isOpen,
+          };
+        }
+        return accordion;
+      });
 
-    updateAccordions(updatedAccordions);
+      updateAccordions(updatedAccordions);
+    }
   };
 
+
+
   return (
-    <div onClick={() => toggleAccordion(accordion.title)} onKeyDown={(e) => e.key === 'Enter'} role="button" tabIndex={0}>
+    <div
+      onClick={() => toggleAccordion(accordion.title)}
+      onKeyDown={(e) => toggleAccordion(accordion.title, e)}
+      role="button"
+      tabIndex={0}
+    >
       <p className="w-full my-2" key={accordion.title}>
         <button
           className="flex items-center justify-start font-bold"
