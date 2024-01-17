@@ -35,8 +35,6 @@ function Accordion({
     }
   };
 
-
-
   return (
     <div
       onClick={() => toggleAccordion(accordion.title)}
